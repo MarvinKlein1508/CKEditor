@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="ReleaseTestsystem" />
+  </Configurations>
+  <Project Path="BlazorApp1/BlazorApp1.csproj">
+    <BuildType Solution="ReleaseTestsystem|*" Project="Release" />
+  </Project>
+  <Project Path="CKEditor/CKEditor.csproj" />
+</Solution>
