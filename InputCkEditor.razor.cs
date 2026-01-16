@@ -29,7 +29,7 @@ public partial class InputCkEditor : IAsyncDisposable
     {
         if (firstRender)
         {
-            _jsModule = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/Blazor.CKEditor/ckeditor.interop.js?ver=2");
+            _jsModule = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/Blazor.CKEditor/ckeditor.interop.js");
             await _jsModule.InvokeVoidAsync("setup", [_guid, _reference]);
             await _jsModule.InvokeVoidAsync("setReadonly", [_guid, ReadOnly]);
         }

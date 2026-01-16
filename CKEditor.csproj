@@ -22,10 +22,6 @@
 		<SupportedPlatform Include="browser" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<Content Update="wwwroot\ckeditor.interop.js">
-			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-		</Content>
-	</ItemGroup>
+
 
 </Project>
